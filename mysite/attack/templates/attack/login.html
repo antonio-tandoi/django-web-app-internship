@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<title> Login </title>
+<link rel = "stylesheet" href = "{% static 'attack/login_style.css' %}" type = "text/css">
+{% endblock %}
+
+{% block body %}
+ <div class="row no-gutter">
+	<div class="col-lg-6 register-left">
+		<img src="https://image.flaticon.com/icons/png/512/30/30992.png" class = "imgvir">
+		<h3>Benvenuto!</h3>
+		<p>Cybersecurity Platform</p>
+	</div>
+	<div class="col-lg-6" style = "background-color: white">
+		<div class="login d-flex align-items-center py-5">
+			<div class="container">
+				<div class="col-lg-8 mx-auto">
+					<h3 class="login-heading mb-4">Benvenuto!</h3>
+						
+					<form action >
+						<div class="form-label-group">
+						  <input type="email" id="inputEmail" class="form-control"  required>
+						  <label for="inputEmail">E-mail</label>
+						</div>
+						<div class="form-label-group">
+						  <input type="password" id="inputPassword" class="form-control" required>
+						  <label for="inputPassword">Password</label>
+						</div>
+						<div class="custom-control custom-checkbox mb-3">
+						  <input type="checkbox" class="custom-control-input" id="customCheck1">
+						  <label class="custom-control-label" for="customCheck1">Ricorda Password</label>
+						</div>
+						<button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Login</button>
+						<div class="text-center">
+						  <a class="small" href="#">Non ricordi la password?</a></div>
+				  </form>
+					  
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+
+
+{% endblock %}

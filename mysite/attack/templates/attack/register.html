@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<title> Register </title>
+<link rel = "stylesheet" href = "{% static 'attack/register_style.css' %}" type = "text/css">
+
+{% endblock %}
+
+{% block body %}
+<div class="register">
+	<div class="row">
+		<div class="col-md-3 register-left">
+			<img src="https://image.flaticon.com/icons/png/512/30/30992.png" class = "imgvir">
+			<h3>Benvenuto!</h3>
+			<p>Cybersecurity Platform</p>
+			<input class = "btn btn-login text-uppercase font-weight-bold mb-2" type="submit" value="Login"/><br/>
+		</div>
+		<div class="col-md-9 register-right">
+			<h3 class="register-heading">Inserisci i tuoi dati</h3>
+				<div class="row register-form">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Nome *" value="" />
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Indirizzo E-mail *" value="" />
+						</div>
+						
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="Password *" value="" />
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Cognome *" value="" />
+						</div>
+						<div class="form-group">
+							<select class="form-control">
+								<option class="hidden"  selected disabled>Sono...</option>
+								<option>Studente</option><option>Professore</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control"  placeholder="Conferma Password *" value="" />
+						</div>
+					</div>
+					<input class = "btn btn-primary btn-login text-uppercase font-weight-bold mb-2" type="submit" style = "width: 30%; horizontal-align: center"value="Registrati"/>
+				</div>	
+		</div>
+	</div>
+</div>
+{% endblock %}
