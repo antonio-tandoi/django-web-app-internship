@@ -1,9 +1,10 @@
 from django.db import models
+from sortedm2m.fields import SortedManyToManyField
 
 class Categories(models.Model):
     id_category = models.AutoField(db_column='ID_Category', primary_key=True)  
     category = models.CharField(db_column='Category', max_length=100, verbose_name = "Categoria")  
-    cat_description = models.CharField(db_column='CAT_Description', 
+    cat_description = models.TextField(db_column='CAT_Description', 
                                        max_length=500, verbose_name = "Descrizione")  
 
     def __str__(self):
@@ -20,8 +21,10 @@ class Categories(models.Model):
 class Values(models.Model):
     id_value = models.IntegerField(db_column='ID_Value', primary_key=True)  
     id_cat = models.ForeignKey(Categories, models.DO_NOTHING, db_column='ID_Cat',
-                               verbose_name = "Categoria di appartenenza")
-    value = models.CharField(db_column='Value', max_length=100, verbose_name = "Tipologia")  
+                               verbose_name = "Categoria")
+    value = models.CharField(db_column='Value', max_length=100, verbose_name = "Valore")
+    descrizione = models.TextField(db_column='Descrizione', max_length=500, blank=True, null=True,
+                                   verbose_name = "Descrizione")  
 
     def __str__(self):
         return self.value
@@ -36,10 +39,11 @@ class Values(models.Model):
 
 class Attacks(models.Model):
     name = models.CharField(db_column='Name', max_length=100, verbose_name = "Nome")  
-    atk_description = models.CharField(db_column='ATK_Description', max_length=500, 
+    atk_description = models.TextField(db_column='ATK_Description', max_length=500, 
                                        verbose_name = "Descrizione") 
     id_atk = models.AutoField(db_column='ID_ATK', primary_key=True) 
     valori_categoria = models.ManyToManyField(Values)
+    #correlazione = SortedManyToManyField('Attacks')
     correlazione = models.ManyToManyField('Attacks')
     
     def __str__(self):

@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.urls import reverse
 from .models import Attacks, Categories, Values
 from django.contrib.auth.decorators import login_required
+from django.http import Http404
 
 #site.site_title = 'App'
 
@@ -29,3 +30,15 @@ def index(request):
     
 def home(request):
     pass
+
+def error_404_view(request, exception):
+    return render(request, 'attack/404.html')
+
+# def error_500_view(request):
+#     return render(request, 'attack/500.html')
+# 
+# def error_500_demo(request):
+#     return render(request, 'attack/500.html')
+
+
+
