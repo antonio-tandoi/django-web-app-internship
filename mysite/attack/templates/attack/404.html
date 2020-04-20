@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> 404 Pagina inesistente </title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<link rel = "stylesheet" href = "{% static 'attack/404_style.css' %}" type = "text/css">
+{% endblock %}
+
+{% block body %}
+<div id="notfound">
+	<div class="notfound">
+		<div class="notfound-404">
+			<h1>4<span>0</span>4</h1>
+		</div>
+		<h2>La pagina che cercavi non esiste</h2>
+		<form class="notfound-search">
+			<input type="text" placeholder="Search...">
+			<button type="button"><span></span></button>
+		</form>
+	</div>
+</div>
+{% endblock %}
