@@ -1,0 +1,16 @@
+{% load static %}
+{% block head %}
+<title> 503 Servizio non disponibile </title>
+<link rel = "stylesheet" href = "{% static 'attack/503_style.css' %}" type = "text/css">
+
+{% endblock %}
+
+{% block body %}
+<div class="overlay"></div>
+<div class="terminal">
+  <h1>Error <span class="errorcode">503</span></h1>
+  <p class="output">Il server non può attualmente rispondere alla tua richiesta, è in manutenzione.</p>
+  <p class="output">Riprova più tardi.</p>
+  <p class="output">Scusa il disagio!</p>
+</div>
+{% endblock %}
