@@ -7,3 +7,12 @@ L'applicazione Web si trova all'interno della cartella 'mysite/attack'. I file p
 - il file 'models.py' contiene le specifiche del modello di dati adottato
 
 Le cartelle 'mysite/attack/templates' e 'mysite/attack/static' contengono rispettivamente HTML e CSS delle pagine front-end. 
+
+Package richiesti:
+- Django > 3.0
+- Django 'adminactions'
+- Django 'maintenance_mode'
+- Django 'materialadmin'
+- Django 'csv_exports'
+- Django 'autocompletefilter'
+- Django 'sortedm2m'
