@@ -17,6 +17,9 @@ Package richiesti:
 - Django 'autocompletefilter'
 - Django 'sortedm2m'
 
+<a href="https://imgur.com/i4qM3tk"><img src="https://i.imgur.com/i4qM3tk.png" title="source: imgur.com" /></a>
+
+
 # WEB App for managing a database of cyber attacks
 
 The 'mysite/mysite' folder contains general directives on how the application should work (operation of the views, links to DB, new modules to embed ...)
