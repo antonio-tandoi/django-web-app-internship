@@ -1,3 +1,5 @@
+<a href="https://imgur.com/i4qM3tk"><img src="https://i.imgur.com/i4qM3tk.png" title="source: imgur.com" /></a>
+
 # WEB App per la gestione di un database di attacchi informatici
 
 La cartella 'mysite/mysite' contiene direttive generali su come dovrà funzionare l'applicazione (funzionamento delle viste, collegamenti a DB, nuovi moduli da incorporare...)
@@ -16,9 +18,6 @@ Package richiesti:
 - Django 'csv_exports'
 - Django 'autocompletefilter'
 - Django 'sortedm2m'
-
-<a href="https://imgur.com/i4qM3tk"><img src="https://i.imgur.com/i4qM3tk.png" title="source: imgur.com" /></a>
-
 
 # WEB App for managing a database of cyber attacks
 
