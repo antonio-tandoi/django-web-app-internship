@@ -1,4 +1,4 @@
-# internship-project
+# WEB App per la gestione di un database di attacchi informatici
 
 La cartella 'mysite/mysite' contiene direttive generali su come dovrà funzionare l'applicazione (funzionamento delle viste, collegamenti a DB, nuovi moduli da incorporare...)
 
@@ -17,7 +17,7 @@ Package richiesti:
 - Django 'autocompletefilter'
 - Django 'sortedm2m'
 
-# internship-project
+# WEB App for managing a database of cyber attacks
 
 The 'mysite/mysite' folder contains general directives on how the application should work (operation of the views, links to DB, new modules to embed ...)
 
